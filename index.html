@@ -1,0 +1,384 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Library Neat</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <div class="wrapper">
+        <ul id="navbar__list" style="display: flex;">
+          <div class="logo">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/8492/t/6/assets/SN%20Monogram.svg?v=81107711080639347001606709977"
+              alt="">
+            <h1 class="logo-text" style="font-family: 'Dosis', sans-serif;">Library Neat</h1>
+          </div>
+
+          <div id="shipping-header">
+            <div class="shipping-top-flag" style="margin-right: 0px;">
+              <div class="shipping-top-flag-text">Free Shipping on U.S. orders over $150.</div>
+            </div>
+          </div>
+        </ul>
+      </div>
+
+
+    </nav>
+
+  </header>
+  <main>
+    <header class="main__hero">
+      <div id="main-banner">
+        <div class="banner-photo">
+          <p>Mark Three: A Minimal and Durable
+            Mechanical Pencil
+          </p>
+          <a href="">
+            <div class="button-get">GET MARK THREE</div>
+          </a>
+        </div>
+      </div>
+
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="PRODUCTS" class="active-section">
+      <div class="landing__container">
+        <h3>Here at Library Neat, we design tools for people. See Products we make below.</h3>
+        <dir class="product-break" style="width: 10%;"></dir>
+        <div class="section1-wrapper">
+          <div class="homepage-break"></div>
+
+          <div class="grid-uniform">
+
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/markone">
+                  <div class="circle-mask">
+                    <img alt="Mark One"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/products/MarkOneOverview_large.jpg?v=1569188568">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/markone">Mark One</a></div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">A Minimal, Durable, Retractable Pen</div>
+            </div>
+
+            <!-- get home image if exists -->
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/marktwo">
+                  <div class="circle-mask">
+                    <img alt="Mark Two"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/products/MK2OverviewSilverweb_large.jpg?v=1653058730">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/marktwo">Mark Two</a></div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">A minimal and durable pocket pen</div>
+            </div>
+
+            <!-- get home image if exists -->
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/materialdock">
+                  <div class="circle-mask">
+                    <img alt="Material Dock"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/products/TDOCKOverviewEmpty_7c59d0dc-3f35-41de-82e4-1fa542d17232_large.jpg?v=1660230912">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/materialdock">Material Dock</a></div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">Wood Docks for MagSafe</div>
+            </div>
+
+            <!-- get home image if exists -->
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/panobook">
+                  <div class="circle-mask">
+                    <img alt="Panobook"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/products/Top-CoverDetail_grande_6d0c6393-0006-43d8-983c-88c4a9008f02_large.jpg?v=1511283111">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/panobook">Panobook</a></div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">A Notebook for Your Desk</div>
+            </div>
+
+            <!-- get home image if exists -->
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/panopad">
+                  <div class="circle-mask">
+                    <img alt="Panopad"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/products/PanopadOverview2sm_8c4b9114-d274-4994-a634-9154c1368798_large.jpg?v=1627059953">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/panopad">Panopad</a></div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">A Panoramic Scratch Pad for Your Desk.</div>
+            </div>
+
+            <!-- get home image if exists -->
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/totebook">
+                  <div class="circle-mask">
+                    <img alt="Totebook"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/t/6/assets/Overview_Front%20sm.jpg?v=113060019566633222741627318759">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/totebook">Totebook</a></div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">A Notebook to Take With You</div>
+            </div>
+
+            <!-- get home image if exists -->
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/glif">
+                  <div class="circle-mask">
+                    <img alt="Glif"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/products/GLIF-SideL_ce5a6537-6c2e-49b9-b696-75eaa4576c89_large.jpg?v=1495053742">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/glif">Glif</a></div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">A Tripod Mount for Smartphones</div>
+            </div>
+
+            <!-- get home image if exists -->
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/canopy">
+                  <div class="circle-mask">
+                    <img alt="Canopy"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/products/Canopy_Proped_Angle_iPad_lg_large.jpg?v=1478548469">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/canopy">Canopy</a></div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">Keyboard Case and iPad Stand</div>
+            </div>
+
+            <!-- get home image if exists -->
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/cosmonaut">
+                  <div class="circle-mask">
+                    <img alt="Cosmonaut"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/products/Cosmo_07_large.jpg?v=1409095871">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/cosmonaut">Cosmonaut</a></div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">Wide-Grip Stylus for Touchscreens</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section2" data-nav="LIMITED">
+      <div class="landing__container">
+        <h3>Limtied Items</h3>
+        <dir class="product-break""></dir>
+        <div class=" section2-wrapper">
+          <div class="homepage-break"></div>
+
+          <div class="grid-uniform">
+
+            <!-- get home image if exists -->
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/remote">
+                  <div class="circle-mask">
+                    <img alt="Apple TV Remote Stand"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/products/ATVS02WhiteFrontRemoteOrtho_SM_large.jpg?v=1619761653">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/remote">Apple TV Remote Stand</a></div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">Walnut Stand for the Apple TV Remote</div>
+            </div>
+
+            <!-- get home image if exists -->
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/highball">
+                  <div class="circle-mask">
+                    <img alt="Highball"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/products/HIB_00_large.png?v=1427991398">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/highball">Highball</a></div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">Share and Collect Cocktail Recipes</div>
+            </div>
+
+            <!-- get home image if exists -->
+            <div class="grid-item large--one-third medium--one-half product-circle">
+              <div class="circle-outline">
+                <a href="/products/slowfast">
+                  <div class="circle-mask">
+                    <img alt="SLOW FAST SLOW"
+                      src="//cdn.shopify.com/s/files/1/0057/8492/products/SFS_Icon_1d20a7d9-2fb7-4870-87b2-665082a08594_large.png?v=1502162877">
+                  </div>
+                </a>
+              </div>
+              <!-- <div class="circle-point"></div> -->
+              <div class="product-title"><a href="/products/slowfast">SLOW FAST SLOW</a>
+                <div id="extwaiokist" style="display:none" v="fbobe" q="3a238ea0" c="391.1" i="401" u="1.352"
+                  s="04072304" sg="svr_03162317-ga_04072304-bai_03222315" d="2" w="false" e="" a="3" m="BMe="
+                  vn="3adg2">
+                  <div id="extwaigglbit" style="display:none" v="fbobe" q="3a238ea0" c="391.1" i="401" u="1.352"
+                    s="04072304" sg="svr_03162317-ga_04072304-bai_03222315" d="2" w="false" e="" a="3" m="BMe="></div>
+                </div>
+              </div>
+              <dir class="product-break"></dir>
+              <div class="product-subtitle">Control the Speed of Your iPhone Videos</div>
+            </div>
+
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="section3" data-nav="CUSTOM">
+      <div class="landing__container">
+        <h3 style="padding-bottom: 10px;">Customed</h3>
+        <dir class="product-break"></dir>
+        <div class="wrapper">
+          <div class="custom-img">
+            <img
+              src="//cdn.shopify.com/s/files/1/0057/8492/t/6/assets/Color%20Row%20Transparent.jpg?v=29035468623987803161666727887">
+          </div>
+
+          <div class="custom-program-info">
+            <h2>Mark One Custom Program</h2>
+            <div class="custom-program-desc">We offer customization of our Mark One pen for orders of 100 units or more.
+              We will guide you through the process of creating a Mark One that is truly custom made for your brand.
+              Perfect for company gifts, resellers, new hire kits, or anyone wanting to make an impression with a
+              thoughtfully designed object.</div>
+            <a class="btn stand-alone" href="mailto:hello@LibraryNeat.com?subject=Custom Mark One">Inquire</a>
+          </div>
+
+          <div class="gallery">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/8492/t/6/assets/MK1%20No%20003%20Greenery.jpg?v=151515561272594729581635886967">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/8492/t/6/assets/MK1%20SE21%20IRL%20Colors.jpg?v=142798444533156218821624373048">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/8492/t/6/assets/Red%20on%20Red%20SM.jpg?v=134311422200618252971666798779">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/8492/t/6/assets/MK1%20LE003%20Three%20Colors.jpg?v=112602310113987668611635887224">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/8492/t/6/assets/004%20Top%20Con.jpg?v=114897062330175778711645639587">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/8492/t/6/assets/Color%20Testing%20SM.jpg?v=91688936526383237051666798830">
+          </div>
+
+
+        </div>
+    </section>
+
+    <section id="section4" data-nav="ABOUTUS" style="background-color: 1d1d1d;">
+      <footer class="site-footer" role="contentinfo">
+
+
+        <div class="grid" style="margin-top: 5%;">
+
+          <div class="grid-item newsletter" style="margin-right: 80px;">
+            <h5>NEWSLETTER</h5>
+            <div class="newsletter-blurb">Join our infrequently used, only on special occasions, non-spammy
+              newsletter.</div>
+            <div class="newsletter-blurb" style="margin-top: 10px;">Or, check out our weekly <a href="">Gazette</a>.
+            </div>
+          </div>
+
+          <div class="grid-item contactus">
+            <h5>CONTACT US</h5>
+            <p>
+              <a id="contact-em" href="mailto:hello@LibraryNeat.com">hello@LibraryNeat.com</a><br>
+              Phone: 01226707735
+            </p>
+            <p>
+              P.O. Box 90723 <br>
+              Cairo, 78709-0723 <br>
+              EG
+            </p>
+          </div>
+
+          <div class="grid-item foloowus">
+            <h5>FOLLOW US</h5>
+            <ul style="list-style: none outside; padding-left: 3px;">
+              <li><a href="">TWITTER</a></li>
+              <li><a href="">INSTAGRAM</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="" target="_blank">PODCAST</a></li>
+            </ul>
+            <!--<a target="_blank" href="https://www.signifyd.com/?utm_source=customer&utm_medium=badge&utm_campaign=badge"><img id="signifyd-badge" src="//cdn.signifyd.com/assets/images/signifyd-text-white.png" alt="Signifyd | Fraud Protection and Chargeback Prevention for eCommerce" /></a>-->
+          </div>
+        </div>
+
+
+        <div class="footer-breadcrumb" style="display: flex; flex-direction: column;">
+          <p>Copyright 2023 Studio Neat.</p>
+
+          <div class="footer-extra-info">
+            <a href="/pages/press">Press</a> | <a href="/pages/faq">FAQ</a> | <a
+              href="/pages/terms-conditions">Terms</a>
+            | <a href="/pages/privacy">Privacy</a>
+          </div>
+
+        </div>
+
+
+      </footer>
+    </section>
+
+  </main>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
